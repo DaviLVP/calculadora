@@ -1,0 +1,81 @@
+#include <stdio.h>
+#include <math.h>
+int main(void) {
+    /*
+    trabalho da faculdade que é fazer uma caculadora em C, ela funciona de uma maneira bem simples. o usuario seleciona qual tipo de operação matematica ele quer realizar, o sistema solicita os numeros e os coleta para realizar a operação, a realização do codigo foi feito com base no ebook e em conhecimentos que já conhecia ou compartilhei com colegas.
+    */
+    int numero1, numero2, op, resultado;
+    float resultadoraiz, num1r;
+    int soma, subtracao, multiplicacao, divisao, raiz, potencia;
+
+    printf("Davi Lopes Vieira Pedrosa, ADS, Universidade LaSalle, 202210431 \n");
+    
+    printf ("Digite 1 para realizar raiz quadrada \n");
+    printf ("Digite 2 para realizar as outras opções matematicas \n");
+    scanf ("%d", &op);
+    if (op==1)
+    {
+    /*
+    Usuário optou por raiz quadrada
+    */
+        printf ("Digite o valor desejado para realizar a raiz  \n"); 
+        scanf ("%f", &num1r);
+        resultadoraiz = sqrt (num1r);
+        printf ("o resultado da raiz é: %.3f", resultadoraiz);
+         return 0;
+    }
+   
+    if (op==2) 
+    { printf ("Digite 1 para soma  \n");
+    printf ("Digite 2 para subtração \n");
+    printf ("Digite 3 para multiplicação  \n");
+    printf ("Digite 4 para divisão \n");
+    printf ("Digite 5 para potencia  \n");
+   scanf ("%d", &op);
+}   
+{
+    if (op==1)
+      { printf ("Digite o primeiro numero da soma:");
+        scanf ("%d", &numero1);
+       printf ("Digite o segundo numero da soma:");
+       scanf ("%d", &numero2);
+       resultado = (numero1 + numero2);
+      printf ("O resultado é: %d", resultado);
+      }
+else if (op==2)
+    {printf (" Digite o primeiro numero da subtracao \n");
+    scanf ("%d", &numero1);
+    printf ("digite o segundo numero da subtracao \n");
+    scanf ("%d", &numero2);
+    resultado = (numero1 - numero2);
+    printf ("O resultado é: %d", resultado);
+    }
+else if (op==3)
+    {  printf ("digite o primeiro numero");
+        scanf ("%d", &numero1);
+        printf ("digite o segundo numero");
+        scanf ("%d", &numero2);
+        resultado = numero1 * numero2;
+    printf ("O resultado é: %d", resultado);
+    }
+    else if (op==4) 
+        {printf ("digite o primeiro numero");
+        scanf ("%d", &numero1);
+        printf ("digite o segundo numero");
+        scanf ("%d", &numero2);
+        resultado = numero1 / numero2;
+    printf ("O resultado é: %d", resultado);
+    } 
+    else if (op==5)
+    {
+            printf ("digite o primeiro numero: ");
+            scanf ("%d", &numero1);
+            printf ("digite o segundo numero: ");
+            scanf ("%d", &numero2);
+            potencia = pow (numero1,numero2);
+    printf ("O resultado é: %d", potencia);
+    }
+   
+    return 0;
+    }
+}
